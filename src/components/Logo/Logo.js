@@ -1,6 +1,6 @@
 // material-ui
 import { useTheme } from '@mui/material/styles';
-import petLogo from '../../assets/images/logo/PetMArtLogo.png';
+import petLogo from '../../assets/images/logo/logohorizonal.png';
 /**
  * if you want to use image instead of <svg> uncomment following.
  *
@@ -22,7 +22,7 @@ const Logo = () => {
          *
          */
         <>
-            <img src={petLogo} alt="Mantis" width="55" height="55" />
+            <img src={petLogo} alt="Mantis" width="200" />
         </>
     );
 };
