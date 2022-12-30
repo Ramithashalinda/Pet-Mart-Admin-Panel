@@ -5,7 +5,10 @@ import {
     BarcodeOutlined,
     BgColorsOutlined,
     FontSizeOutlined,
-    LoadingOutlined
+    LoadingOutlined,
+    UsergroupDeleteOutlined,
+    FolderViewOutlined,
+    UploadOutlined
 } from '@ant-design/icons';
 
 // icons
@@ -15,7 +18,10 @@ const icons = {
     BarcodeOutlined,
     AntDesignOutlined,
     LoadingOutlined,
-    AppstoreAddOutlined
+    AppstoreAddOutlined,
+    UsergroupDeleteOutlined,
+    FolderViewOutlined,
+    UploadOutlined
 };
 
 // ==============================|| MENU ITEMS - UTILITIES ||============================== //
@@ -27,33 +33,33 @@ const utilities = {
     children: [
         {
             id: 'util-typography',
-            title: 'Typography',
+            title: 'User List',
             type: 'item',
-            url: '/typography',
-            icon: icons.FontSizeOutlined
+            url: '/user',
+            icon: icons.UsergroupDeleteOutlined
         },
         {
             id: 'util-color',
-            title: 'Color',
+            title: 'Post List',
             type: 'item',
-            url: '/color',
-            icon: icons.BgColorsOutlined
+            url: '/postList',
+            icon: icons.FolderViewOutlined
         },
         {
             id: 'util-shadow',
-            title: 'Shadow',
+            title: 'Upload Notice',
             type: 'item',
-            url: '/shadow',
-            icon: icons.BarcodeOutlined
-        },
-        {
-            id: 'ant-icons',
-            title: 'Ant Icons',
-            type: 'item',
-            url: '/icons/ant',
-            icon: icons.AntDesignOutlined,
-            breadcrumbs: false
+            url: '/uploadNotice',
+            icon: icons.UploadOutlined
         }
+        // {
+        //     id: 'ant-icons',
+        //     title: 'Ant Icons',
+        //     type: 'item',
+        //     url: '/icons/ant',
+        //     icon: icons.AntDesignOutlined,
+        //     breadcrumbs: false
+        // }
     ]
 };
 

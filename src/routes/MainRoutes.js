@@ -8,9 +8,9 @@ import MainLayout from 'layout/MainLayout';
 const DashboardDefault = Loadable(lazy(() => import('pages/dashboard')));
 
 // render - utilities
-const Typography = Loadable(lazy(() => import('pages/components-overview/Typography')));
-const Color = Loadable(lazy(() => import('pages/components-overview/Color')));
-const Shadow = Loadable(lazy(() => import('pages/components-overview/Shadow')));
+const User = Loadable(lazy(() => import('pages/components-overview/UserPage')));
+const PostList = Loadable(lazy(() => import('pages/components-overview/PostList')));
+const UploadNotice = Loadable(lazy(() => import('pages/components-overview/UploadNotice')));
 const AntIcons = Loadable(lazy(() => import('pages/components-overview/AntIcons')));
 
 // ==============================|| MAIN ROUTING ||============================== //
@@ -24,8 +24,8 @@ const MainRoutes = {
             element: <DashboardDefault />
         },
         {
-            path: 'color',
-            element: <Color />
+            path: 'postList',
+            element: <PostList />
         },
         {
             path: 'dashboard',
@@ -38,12 +38,12 @@ const MainRoutes = {
         },
 
         {
-            path: 'shadow',
-            element: <Shadow />
+            path: 'uploadNotice',
+            element: <UploadNotice />
         },
         {
-            path: 'typography',
-            element: <Typography />
+            path: 'user',
+            element: <User />
         },
         {
             path: 'icons/ant',

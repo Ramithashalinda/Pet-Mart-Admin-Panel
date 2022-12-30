@@ -5,27 +5,24 @@ import { Link as RouterLink } from 'react-router-dom';
 // material-ui
 import { Box, Link, Stack, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography } from '@mui/material';
 
-// third-party
-import NumberFormat from 'react-number-format';
-
 // project import
 import Dot from 'components/@extended/Dot';
 
-function createData(trackingNo, name, fat, carbs, protein) {
-    return { trackingNo, name, fat, carbs, protein };
+function createData(trackingNo, name, fat, carbs) {
+    return { trackingNo, name, fat, carbs };
 }
 
 const rows = [
-    createData(84564564, 'Camera Lens', 40, 2, 40570),
-    createData(98764564, 'Laptop', 300, 0, 180139),
-    createData(98756325, 'Mobile', 355, 1, 90989),
-    createData(98652366, 'Handset', 50, 1, 10239),
-    createData(13286564, 'Computer Accessories', 100, 1, 83348),
-    createData(86739658, 'TV', 99, 0, 410780),
-    createData(13256498, 'Keyboard', 125, 2, 70999),
-    createData(98753263, 'Mouse', 89, 2, 10570),
-    createData(98753275, 'Desktop', 185, 1, 98063),
-    createData(98753291, 'Chair', 100, 0, 14001)
+    createData(84564564, 'ramitha@gmail.com', 40, 2),
+    createData(98764564, 'Laptop', 300, 0),
+    createData(98756325, 'Mobile', 355, 1),
+    createData(98652366, 'Handset', 50, 1),
+    createData(13286564, 'Computer Accessories', 100, 1),
+    createData(86739658, 'TV', 99, 0),
+    createData(13256498, 'Keyboard', 125, 2),
+    createData(98753263, 'Mouse', 89, 2),
+    createData(98753275, 'Desktop', 185, 1),
+    createData(98753291, 'Chair', 100, 0)
 ];
 
 function descendingComparator(a, b, orderBy) {
@@ -61,19 +58,19 @@ const headCells = [
         id: 'trackingNo',
         align: 'left',
         disablePadding: false,
-        label: 'Tracking No.'
+        label: 'User UUID'
     },
     {
         id: 'name',
         align: 'left',
         disablePadding: true,
-        label: 'Product Name'
+        label: 'User Email'
     },
     {
         id: 'fat',
         align: 'right',
         disablePadding: false,
-        label: 'Total Order'
+        label: 'Creat At'
     },
     {
         id: 'carbs',
@@ -81,12 +78,6 @@ const headCells = [
         disablePadding: false,
 
         label: 'Status'
-    },
-    {
-        id: 'protein',
-        align: 'right',
-        disablePadding: false,
-        label: 'Total Amount'
     }
 ];
 
@@ -209,9 +200,6 @@ export default function OrderTable() {
                                     <TableCell align="right">{row.fat}</TableCell>
                                     <TableCell align="left">
                                         <OrderStatus status={row.carbs} />
-                                    </TableCell>
-                                    <TableCell align="right">
-                                        <NumberFormat value={row.protein} displayType="text" thousandSeparator prefix="$" />
                                     </TableCell>
                                 </TableRow>
                             );
