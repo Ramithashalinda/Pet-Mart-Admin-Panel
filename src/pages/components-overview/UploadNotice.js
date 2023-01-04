@@ -9,21 +9,21 @@ import UploadFiles from './upload-files.component';
 const rows = [
     {
         id: 1,
-        image: 'https://assets.materialup.com/uploads/bebad102-7f40-4941-99cd-54366113003e/avatar-08.png',
-        name: 'Test notice',
-        createAt: '2012-02-13'
+        image: 'https://firebasestorage.googleapis.com/v0/b/petsmart-a4838.appspot.com/o/uploads%2F1672463111211.jpg?alt=media&token=a2b39b80-53d7-4c2a-841c-92c708830af5',
+        name: 'notice 1',
+        createAt: '2012-02-12'
     },
     {
         id: 2,
-        image: 'https://assets.materialup.com/uploads/bebad102-7f40-4941-99cd-54366113003e/avatar-08.png',
-        name: 'Test notice',
-        createAt: '2012-02-13'
+        image: 'https://firebasestorage.googleapis.com/v0/b/petsmart-a4838.appspot.com/o/uploads%2F1672463137490.jpg?alt=media&token=c38fea18-ad52-43c0-b591-ea4a1a66bddb',
+        name: 'notice 2',
+        createAt: '2012-02-11'
     },
     {
         id: 3,
-        image: 'https://assets.materialup.com/uploads/bebad102-7f40-4941-99cd-54366113003e/avatar-08.png',
-        name: 'Test notice',
-        createAt: '2012-02-13'
+        image: 'https://firebasestorage.googleapis.com/v0/b/petsmart-a4838.appspot.com/o/uploads%2F1672463089988.jpg?alt=media&token=13c13d6f-8eee-4307-90a0-fa66b2792edb',
+        name: 'notice 3',
+        createAt: '2012-02-03'
     }
 ];
 
@@ -32,8 +32,8 @@ function ComponentShadow() {
 
     const handleDeleteClick = (id) => () => {
         confirmAlert({
-            title: 'Confirm to submit',
-            message: 'Are you sure to do this.',
+            title: 'Are you sure ?',
+            message: 'Do you want to delete this Notice ?',
             buttons: [
                 {
                     label: 'Yes',

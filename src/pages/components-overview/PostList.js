@@ -78,8 +78,8 @@ function ComponentColor() {
 
     const handleDeleteClick = (id) => () => {
         confirmAlert({
-            title: 'Confirm to submit',
-            message: 'Are you sure to do this.',
+            title: 'Are you sure ?',
+            message: 'Do you want to delete this post item ?',
             buttons: [
                 {
                     label: 'Yes',
